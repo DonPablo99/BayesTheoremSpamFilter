@@ -6,8 +6,8 @@ class NaiveBayesClassifier():
         self.spam_total = 0
         self.ham_words = {}
         self.ham_total = 0
-        self.pA = 0
-        self.pNotA = 0
+        self.pA = 0     # P(isSpam)
+        self.pNotA = 0  # P(isNotSpam)
         self.laplace = laplace  # Laplace Smoothing
 
     def __repr__(self):
@@ -48,7 +48,8 @@ class NaiveBayesClassifier():
                 clean_bow.append(word.lower())
         return clean_bow
 
-    # Gives the conditional probability p(B|A)
+    # Gives the conditional probability of the email multiplying
+    # the same probability for each individual word in tha email
     def conditionalEmail(self, body, spam):
         result = 1
         bow = self.cleanEmail(body)
@@ -65,6 +66,6 @@ class NaiveBayesClassifier():
 
     # Classifies a new email
     def classify(self, email):
-        isSpam = self.pA * self.conditionalEmail(email, True)  # P (A | B)
-        notSpam = self.pNotA * self.conditionalEmail(email, False)  # P(¬A | B)
+        isSpam = self.pA * self.conditionalEmail(email, True)  # P (isSpam | email)
+        notSpam = self.pNotA * self.conditionalEmail(email, False)  # P(isNotSpam| email)
         return isSpam > notSpam
