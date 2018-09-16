@@ -5,11 +5,11 @@ This is a simple application of Bayes' Theorem for a spam filter classifier
 
 The Bayes' Theoreom is at the base of conditional probability and is defined as:
 
-![BayesTheoremFormula](http://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D%28h%7CD%29%20%3D%20%5Cfrac%7B%5Ctextbf%7BP%7D%28D%7CH%29*%5Ctextbf%7BP%7D%28h%29%7D%7B%5Ctextbf%7BP%7D%28D%29%7D)
+![BayesTheoremFormula](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28h%7CD%29%5Cfrac%7B%5Ctextbf%7BP%7D%28D%7Ch%29*%5Ctextbf%7BP%7D%28h%29%7D%7B%5Ctextbf%7BP%7D%28D%29%7D)
 
 Where:
-* ![PosteriorProbability](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28h%7CD%29) is the **posterior probability**: what we are trying to estimate.
-* ![Likelihood](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28D%7CH%29) is the **likelihood**: a conditional probability that can be found from data we can obtain from some process.
+* ![PosteriorProbability](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28D%7Ch%29) is the **posterior probability**: what we are trying to estimate.
+* ![Likelihood](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28h%29) is the **likelihood**: a conditional probability that can be found from data we can obtain from some process.
 * ![PriorProbability](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28H%29) is the **prior probability**: the probability we already know and is being updated in the posterior probability.
 * !Evidence](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28H%29) is the **evidence**: the new piece of data that we are taking in consideration to update the posterior probability.
 
