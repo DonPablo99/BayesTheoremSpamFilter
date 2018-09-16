@@ -23,7 +23,7 @@ Where:
  We are trying to find the probability of the hypothesis given the data ( ![hgd](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%7Cword%29) ) multiplying the probability of the data given the hypothesis ( ![dgh](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%7CisSpam%29) ) by the probability of the hypothesis ( ![h](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%29) ).
  The probability of the data given the hypothesis ( ![dgh](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%7CisSpam%29) ) is the bit we can 'train' with our dataset in the classifier and the probability of the hypothesis ( ![h](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%29) ) is the one we assume, for both cases spam and ham, and compare the resulting probabilities to give a final classification for a new message.
  
- Note that the denominator is being ignored here. It would have been the probability of a word be contained in an email regardless of it being a spam or ham ( ![evidence](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%29) ).  This is not taken in consideration because it is not relevant and more importantly **It is just a normalization constant, which doesn't depend on the parameter**.
+ Note that the denominator is being ignored here. It would be the probability of a word to be contained in an email regardless of it being a spam or ham ( ![evidence](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%29) ).  This is not taken in consideration because it is not relevant and more importantly **it is just a normalization constant, which doesn't depend on the parameter**.
 
 
 ## Overview
