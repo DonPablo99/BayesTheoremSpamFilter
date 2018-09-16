@@ -19,7 +19,7 @@ Where:
  
  ![FormulaForClassifier](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%7Cword%29%20%3D%20%5Ctextbf%7BP%7D%28word%7CisSpam%29*%5Ctextbf%7BP%7D%28isSpam%29)
  
- Here our hypothesis is the occurrance of a word in spams and hams ( ![isSpam](http://latex.codecogs.com/png.latex?isSpam) ), and the data is each word in a given email ( ![word)(http://latex.codecogs.com/png.latex?word) ).
+ Here our hypothesis is the occurrance of a word in spams and hams ( ![isSpam](http://latex.codecogs.com/png.latex?isSpam) ), and the data is each word in a given email ( ![word](http://latex.codecogs.com/png.latex?word) ).
  We are trying to find the probability of the hypothesis given the data ( ![hgd](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%7Cword%29) ) multiplying the probability of the data given the hypothesis ( ![dgh](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%7CisSpam%29) ) by the probability of the hypothesis ( ![h](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%29) ).
  The probability of the data given the hypothesis ( ![dgh](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28word%7CisSpam%29) ) is the bit we can 'train' with our dataset in the classifier and the probability of the hypothesis ( ![h](http://latex.codecogs.com/png.latex?%5Ctextbf%7BP%7D%28isSpam%29) ) is the one we assume, for both cases spam and ham, and compare the resulting probabilities to give a final classification for a new message.
  
