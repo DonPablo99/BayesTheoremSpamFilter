@@ -43,7 +43,3 @@ Install these using [pip](https://pip.pypa.io/en/stable/)
 
 Type `python sample_code.py` to run the code.
 
-
-## Credits
-
-I have re-adapted the code of [AlanBuzdar](https://github.com/alanbuzdar).
